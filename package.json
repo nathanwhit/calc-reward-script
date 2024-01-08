@@ -1,0 +1,20 @@
+{
+  "name": "reward-script",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Nathan Whitaker",
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@polkadot/api": "^10.11.2"
+  },
+  "scripts": {
+    "run-script": "yarn run ts-node-esm index.ts",
+    "build": "yarn run tsc",
+    "build-run": "yarn build && node dist/index.js"
+  }
+}
